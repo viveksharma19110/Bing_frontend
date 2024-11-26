@@ -12,15 +12,7 @@ import {
 
 const Navbar = () => {
     return (
-        <div className="relative min-h-[540px] bg-gradient-to-b from-gray-900/50 to-transparent">
-            {/* Background Image */}
-            <div
-                className="absolute inset-0 -z-10 bg-cover bg-center"
-                style={{
-                    backgroundImage: `url('https://i.pinimg.com/originals/e9/b2/72/e9b2721d83d72a642dc01fd04160b208.jpg')`,
-                }}
-            />
-
+        <div className="relative min-h-[480px] bg-gradient-to-b from-gray-900/50 to-transparent">
             {/* Top Navigation Bar */}
             <nav className="flex items-center justify-between px-3 py-4">
                 {/* Left section with logo and navigation links */}
@@ -83,8 +75,8 @@ const Navbar = () => {
             </nav>
 
             {/* Main Search Section */}
-            <div className="container mx-auto px-4">
-                <div className="flex flex-col items-center w-full max-w-3xl mx-auto mt-32">
+            <div className="container mx-auto px-4 mt-20">
+                <div className="flex flex-col items-center w-full max-w-3xl mx-auto">
                     {/* Search bar container */}
                     <div className="relative w-full">
                         <div className="relative flex items-center bg-white rounded-full shadow-lg border border-gray-200 hover:border-gray-300 transition-all">
