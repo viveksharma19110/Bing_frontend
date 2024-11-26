@@ -2,6 +2,7 @@
 import React from 'react';
 import Cards from './Cards';
 
+
 const Scroll = ({ data }) => {
   return (
     <div className="flex justify-center py-8">

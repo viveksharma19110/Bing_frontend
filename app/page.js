@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 
 
 import Scroll from './components/Scroll';
+import HorizontalCards from './components/HorizontalCards';
 
 const data = [
   {
@@ -56,6 +57,33 @@ const data = [
   },
 ];
 
+// const data1=[
+//   {
+//     image: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1uGjig.img?w=768&h=432&m=6&x=726&y=105&s=70&d=70",
+//     title: 'Indian athlete who raised alarm about survival of sport in extreme conditions, at UN climate summit in Baku',
+//   },
+//   {
+//     image: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1r7StG.img?w=768&h=432&m=6',
+//     title: 'Spot 3 Differences Between Honeybee Pictures In 19 Seconds!',
+//   },
+//   {
+//     image: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1uHfpw.img?w=768&h=432&m=6&x=300&y=232&s=42&d=42',
+//     title: "Prabhas' most-awaited films The Raja Saab and Kannappa are set to hit theaters in 2025 summer",
+//   },
+//   {
+//     image: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1uKuXP.img?w=768&h=512&m=6',
+//     title: "Schools in Delhi-NCR to now operate in hybrid mode following SC's nudge'",
+//   },
+//   {
+//     image: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1uIYwe.img?w=768&h=432&m=6&x=451&y=192&s=161&d=49',
+//     title: 'DUSU Election Results 2024: NSUI Wins Presidency After 7 Years, ABVP Retains Vice-President And Secretary Posts',
+//   },
+//   {
+//     image: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1uLiy6.img?w=768&h=432&m=6&x=174&y=124&s=66&d=66",
+//     title: "Humiliation': How Australian media reacted to India's sensational victorycom/image2.jpg",
+//   },
+// ];
+
 const Page = () => {
   return (
     <div
@@ -63,13 +91,14 @@ const Page = () => {
       style={{ backgroundImage: `url('https://i.pinimg.com/originals/e9/b2/72/e9b2721d83d72a642dc01fd04160b208.jpg')` }}
     >
       <Navbar />
-      <Scroll data={data} />
+      {/* <HorizontalCards data1={data1}/> */}
+      <Scroll data={data}  />
 
     </div>
   );
 };
 
 export default Page;
-
+    // horizontal card section banana h aur aur footer aur styling sahi karna h
 
 

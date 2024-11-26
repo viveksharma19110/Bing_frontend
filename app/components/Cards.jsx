@@ -8,7 +8,7 @@ const Cards = ({ data }) => {
       {data.map((item, index) => (
         <div 
           key={index} 
-          className="transition-transform transform hover:scale-105 hover:shadow-lg rounded-lg overflow-hidden"
+          className="transition-transform transform hover:scale-105 hover:shadow-lg rounded-lg overflow-hidden  bg-white"
         >
           <Card
             image={item.image}
