@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 
 const Card = ({ image, title, description }) => {
@@ -5,8 +6,7 @@ const Card = ({ image, title, description }) => {
     <div className="rounded-lg overflow-hidden shadow-lg bg-white">
       <img src={image} alt={title} className="w-full h-40 object-cover" />
       <div className="p-4">
-        <h3 className="text-lg font-bold">{title}</h3>
-        <p className="text-gray-600">{description}</p>
+        <h3 className="text-lg font-bold text-black">{title}</h3>
       </div>
     </div>
   );

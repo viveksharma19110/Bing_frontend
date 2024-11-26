@@ -7,51 +7,53 @@ import Scroll from './components/Scroll';
 
 const data = [
   {
-    image: 'https://example.com/image1.jpg',
-    title: 'Title 1',
-    description: 'Description 1',
+    image: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1uGjig.img?w=768&h=432&m=6&x=726&y=105&s=70&d=70",
+    title: 'Indian athlete who raised alarm about survival of sport in extreme conditions, at UN climate summit in Baku',
   },
   {
-    image: 'https://example.com/image2.jpg',
-    title: 'Title 2',
-    description: 'Description 2',
+    image: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1r7StG.img?w=768&h=432&m=6',
+    title: 'Spot 3 Differences Between Honeybee Pictures In 19 Seconds!',
   },
   {
-    image: 'https://example.com/image2.jpg',
-    title: 'Title 2',
-    description: 'Description 2',
+    image: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1uHfpw.img?w=768&h=432&m=6&x=300&y=232&s=42&d=42',
+    title: "Prabhas' most-awaited films The Raja Saab and Kannappa are set to hit theaters in 2025 summer",
   },
   {
-    image: 'https://example.com/image2.jpg',
-    title: 'Title 2',
-    description: 'Description 2',
+    image: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1uKuXP.img?w=768&h=512&m=6',
+    title: "Schools in Delhi-NCR to now operate in hybrid mode following SC's nudge'",
   },
   {
-    image: 'https://example.com/image2.jpg',
-    title: 'Title 2',
-    description: 'Description 2',
+    image: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1uIYwe.img?w=768&h=432&m=6&x=451&y=192&s=161&d=49',
+    title: 'DUSU Election Results 2024: NSUI Wins Presidency After 7 Years, ABVP Retains Vice-President And Secretary Posts',
   },
   {
-    image: 'https://example.com/image2.jpg',
-    title: 'Title 2',
-    description: 'Description 2',
+    image: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1uLiy6.img?w=768&h=432&m=6&x=174&y=124&s=66&d=66",
+    title: "Humiliation': How Australian media reacted to India's sensational victorycom/image2.jpg",
   },
   {
-    image: 'https://example.com/image2.jpg',
-    title: 'Title 2',
-    description: 'Description 2',
+    image: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1uL10g.img?w=768&h=432&m=6&x=504&y=80&s=195&d=195',
+    title: "Who Was Shashi Ruia, Co-Founder Of Rs 14 Billion Essar Group Spread Across 35 Nations",
   },
   {
-    image: 'https://example.com/image2.jpg',
-    title: 'Title 2',
-    description: 'Description 2',
+    image: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1tVd3m.img?w=800&h=435&q=60&m=2&f=jpg',
+    title: '9 amazing benefits of drinking kishmish water every morning',
   },
   {
-    image: 'https://example.com/image2.jpg',
-    title: 'Title 2',
-    description: 'Description 2',
+    image: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1tbvOW.img?w=1920&h=1080&q=60&m=2&f=jpg',
+    title: '10 most beautiful Indian villages',
   },
-  // Add more data objects as needed
+  {
+    image: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1k4uJp.img?w=768&h=512&m=6',
+    title: 'What To Do When A Snake Enters Your Room',
+  },
+  {
+    image: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1uKXIE.img?w=768&h=576&m=6',
+    title: 'How a nine-year-old 26/11 Mumbai terror attack survivor helped the justice system hang Ajmal Kasab',
+  },
+  {
+    image: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1pAPKh.img?w=768&h=432&m=6&x=18&y=115&s=536&d=258',
+    title: 'Eknath Shinde steps down amid suspense over next Maharashtra Chief Minister',
+  },
 ];
 
 const Page = () => {
@@ -70,6 +72,4 @@ const Page = () => {
 export default Page;
 
 
-{/* <Search/> */ }
-{/* kal scrool section banana h aur shadow ka problem theek karna h */ }
-{/* background image ko change karna h h page.js ka backgraound image set karna h */ }
+

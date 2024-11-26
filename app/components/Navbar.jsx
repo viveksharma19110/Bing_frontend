@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import {
     Menu,
@@ -31,7 +32,7 @@ const Navbar = () => {
                             <div className="w-4 h-4 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full"></div>
                             <span className="text-white text-sm font-normal hover:text-gray-300 ">Copilot</span>
                         </div>
-                        <a href="#" className="text-white text-sm font-normal hover:text-gray-300 ">Images</a>
+                        <a href="#" className="text-white text- font-normal hover:text-gray-300 ">Images</a>
                         <a href="#" className="text-white text-sm font-normal hover:text-gray-300 ">Videos</a>
                         <a href="#" className="text-white text-sm font-normal hover:text-gray-300 ">Shopping</a>
                         <a href="#" className="text-white text-sm font-normal hover:text-gray-300 ">Maps</a>
@@ -76,7 +77,7 @@ const Navbar = () => {
 
             {/* Main Search Section */}
             <div className="container mx-auto px-4 mt-20">
-                <div className="flex flex-col items-center w-full max-w-3xl mx-auto">
+                <div className="flex flex-col w-full max-w-3xl mx-auto">
                     {/* Search bar container */}
                     <div className="relative w-full">
                         <div className="relative flex items-center bg-white rounded-full shadow-lg border border-gray-200 hover:border-gray-300 transition-all">
@@ -105,20 +106,20 @@ const Navbar = () => {
                     </div>
 
                     {/* Languages section */}
-                    <div className="shadow-lgmt-4 flex items-center space-x-2 text-sm text-white">
+                    <div className="flex  ml-4 space-x-2 text-sm text-white mt-2">
                         <span>Languages:</span>
-                        <div className="flex flex-wrap items-center gap-2">
-                            <button className="shadow-xl hover:underline">हिंदी</button>
-                            <button className="shadow-lg hover:underline">বাংলা</button>
-                            <button className="shadow-lg hover:underline">اردو</button>
-                            <button className="shadow-lg hover:underline">ਪੰਜਾਬੀ</button>
-                            <button className="shadow-lg hover:underline">मराठी</button>
-                            <button className="shadow-lg hover:underline">తెలుగు</button>
-                            <button className="shadow-lg hover:underline">தமிழ்</button>
-                            <button className="shadow-lg hover:underline">ಕನ್ನಡ</button>
-                            <button className="shadow-lg hover:underline">ગુજરાતી</button>
-                            <button className="shadow-lg hover:underline">മലയാളം</button>
-                            <button className="shadow-lg hover:underline">ଓଡ଼ିଆ</button>
+                        <div className="flex flex-wrap gap-2">
+                            <button className="shadow-lg p-0 hover:underline">हिंदी</button>
+                            <button className="shadow-lg p-0 hover:underline">বাংলা</button>
+                            <button className="shadow-lg p-0 hover:underline">اردو</button>
+                            <button className="shadow-lg p-0 hover:underline">ਪੰਜਾਬੀ</button>
+                            <button className="shadow-lg p-0 hover:underline">मराठी</button>
+                            <button className="shadow-lg p-0 hover:underline">తెలుగు</button>
+                            <button className="shadow-lg p-0 hover:underline">தமிழ்</button>
+                            <button className="shadow-lg p-0 hover:underline">ಕನ್ನಡ</button>
+                            <button className="shadow-lg p-0 hover:underline">ગુજરાતી</button>
+                            <button className="shadow-lg p-0 hover:underline">മലയാളം</button>
+                            <button className="shadow-lg p-0 hover:underline">ଓଡ଼ିଆ</button>
                         </div>
                     </div>
                 </div>
