@@ -32,11 +32,11 @@ const Navbar = () => {
                             <div className="w-4 h-4 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full"></div>
                             <span className="text-white text-sm font-normal hover:text-gray-300 ">Copilot</span>
                         </div>
-                        <a href="#" className="text-white text- font-normal hover:text-gray-300 ">Images</a>
-                        <a href="#" className="text-white text-sm font-normal hover:text-gray-300 ">Videos</a>
-                        <a href="#" className="text-white text-sm font-normal hover:text-gray-300 ">Shopping</a>
-                        <a href="#" className="text-white text-sm font-normal hover:text-gray-300 ">Maps</a>
-                        <a href="#" className="text-white text-sm font-normal hover:text-gray-300 ">News</a>
+                        <a href="https://www.bing.com/images?FORM=Z9LH" className="text-white text- font-normal hover:text-gray-300 ">Images</a>
+                        <a href="https://www.bing.com/videos/onecolumn/landing?form=Z9LH1" className="text-white text-sm font-normal hover:text-gray-300 ">Videos</a>
+                        <a href="https://www.bing.com/shop?FORM=Z9LHS4" className="text-white text-sm font-normal hover:text-gray-300 ">Shopping</a>
+                        <a href="https://www.bing.com/maps?FORM=Z9LH2&cp=28.727926%7E77.289505&lvl=11.0" className="text-white text-sm font-normal hover:text-gray-300 ">Maps</a>
+                        <a href="https://www.bing.com/news/search?q=Top+stories&nvaug=%5bNewsVertical+Category%3d%22rt_MaxClass%22%5d&FORM=Z9LH3" className="text-white text-sm font-normal hover:text-gray-300 ">News</a>
                         <button className="text-xs text-white">
                             <MoreHorizontal className="w-4 h-4" />
                         </button>
