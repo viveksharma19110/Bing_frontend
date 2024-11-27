@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Scroll from "./components/Scroll";
 import HorizontalCards from "./components/HorizontalCards";
+import LocationComponent from "./components/Location"
 
 const data = [
   {
@@ -112,6 +113,7 @@ const Page = () => {
       }}
     >
       <Navbar />
+      <LocationComponent/>
       <HorizontalCards data1={data1} />
       <Scroll data={data} />
       <FeedbackButton />
