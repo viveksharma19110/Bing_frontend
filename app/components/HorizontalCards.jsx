@@ -13,7 +13,7 @@ const HorizontalScrollableCards = ({ data1 }) => {
   };
 
   return (
-    <div className="flex justify-between items-center py-4 p-12 mr-2">
+    <div className="flex items-center py-4  ">
       <button
         className="mr-9 p-2 rounded-full hover:bg-gray-100 focus:outline-none"
         onClick={() => handleScroll('left')}
@@ -35,7 +35,7 @@ const HorizontalScrollableCards = ({ data1 }) => {
 
       <div
         ref={scrollContainerRef}
-        className="flex flex-nowrap overflow-x-auto no-scrollbar -mx-4 snap-x snap-mandatory"
+        className="flex flex-nowrap overflow-x-auto no-scrollbar -mx-0 snap-x snap-mandatory"
         onKeyDown={(e) => {
           if (e.key === 'ArrowLeft') {
             handleScroll('left');
@@ -64,7 +64,7 @@ const HorizontalScrollableCards = ({ data1 }) => {
       </div>
 
       <button
-        className="ml-9 p-2 rounded-full  hover:bg-gray-100 focus:outline-none"
+        className="ml-9 p-2 rounded-full hover:bg-gray-100 focus:outline-none"
         onClick={() => handleScroll('right')}
       >
         <svg
