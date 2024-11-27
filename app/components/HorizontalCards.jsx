@@ -15,13 +15,13 @@ const HorizontalScrollableCards = ({ data1 }) => {
   return (
     <div className="flex justify-between items-center py-4 p-12 mr-2">
       <button
-        className="mr-12 p-2 rounded-full bg-gray-200 hover:bg-gray-300 focus:outline-none"
+        className="mr-9 p-2 rounded-full hover:bg-gray-100 focus:outline-none"
         onClick={() => handleScroll('left')}
       >
         <svg
-          className="h-6 w-6 text-gray-600"
+          className="h-10 w-10 text-white hover:text-black"
           fill="none"
-          viewBox="0 0 24 24"
+          viewBox="0 0 26 26"
           stroke="currentColor"
         >
           <path
@@ -64,11 +64,11 @@ const HorizontalScrollableCards = ({ data1 }) => {
       </div>
 
       <button
-        className="ml-12 p-2 rounded-full bg-gray-200 hover:bg-gray-300 focus:outline-none"
+        className="ml-9 p-2 rounded-full  hover:bg-gray-100 focus:outline-none"
         onClick={() => handleScroll('right')}
       >
         <svg
-          className="h-6 w-6 text-gray-600"
+          className="h-10 w-10 text-white hover:text-black"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
