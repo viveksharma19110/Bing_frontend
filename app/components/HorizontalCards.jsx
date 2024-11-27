@@ -46,8 +46,8 @@ const HorizontalScrollableCards = ({ data1 }) => {
         tabIndex={0}
       >
         {data1.map((card, index) => (
-          <div key={index} className="flex-none w-60 h-40 px-4 snap-start">
-            <div className="bg-black bg-opacity-70 rounded-lg shadow-lg h-full flex flex-col justify-between">
+          <div key={index} className="flex-none w-60 h-40 px-1 snap-start transition-transform transform hover:scale-105 hover:shadow-lg">
+            <div className="bg-black bg-opacity-70 rounded-lg shadow-lg h-25 flex flex-col justify-between ">
               {/* Title */}
               <h3 className="text-white text-base font-medium p-3 truncate">
                 {card.title}
