@@ -19,7 +19,7 @@ const HorizontalScrollableCards = ({ data1 }) => {
         onClick={() => handleScroll('left')}
       >
         <svg
-          className="h-10 w-10 text-white hover:text-gray-400 hover:bg-opacity-50"
+          className="h-10 w-10 text-white hover:text-gray-300 hover:bg-opacity-50"
           fill="none"
           viewBox="0 0 26 26"
           stroke="currentColor"
@@ -68,7 +68,7 @@ const HorizontalScrollableCards = ({ data1 }) => {
         onClick={() => handleScroll('right')}
       >
         <svg
-          className="h-10 w-10 text-white hover:text-gray-400"
+          className="h-10 w-10 text-white hover:text-gray-300"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

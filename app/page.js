@@ -1,10 +1,10 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { FaMessage } from "react-icons/fa6";
+import { CiLocationOn } from "react-icons/ci";
 import Navbar from "./components/Navbar";
 import Scroll from "./components/Scroll";
 import HorizontalCards from "./components/HorizontalCards";
-import LocationComponent from "./components/Location"
 
 const data = [
   {
@@ -88,34 +88,112 @@ const data1 = [
   },
 ];
 
-const FeedbackButton = () => {
-  const handleFeedbackClick = () => {
-    alert("Feedback form goes here!");
+const Page = () => {
+  
+  const locations = [
+    {
+      name: "Life in Wild",
+      backgroundUrl: "https://i.pinimg.com/originals/e9/b2/72/e9b2721d83d72a642dc01fd04160b208.jpg"
+    },
+    {
+      name: "Castle on a crag",
+      backgroundUrl: "https://images3.alphacoders.com/131/thumb-1920-1318240.jpeg"
+    },
+    {
+      name: "Nature's secret Code",
+      backgroundUrl: "https://images.unsplash.com/photo-1649169112742-10a1319e84c1?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      name: "Tides and twilight",
+      backgroundUrl: "https://c0.wallpaperflare.com/preview/113/664/858/blue-cloud-coast-colorful.jpg"
+    },
+    {
+      name: "Sculpted vision of freedom",
+      backgroundUrl: "https://images.unsplash.com/photo-1621859294461-2e6e4bf0e689?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RhdHVlJTIwb2YlMjB1bml0eXxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      name: "The giant's resting place",
+      backgroundUrl: "https://images.unsplash.com/photo-1624318462623-7a29dbb84e0f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fDRrJTIwZm9yZXN0fGVufDB8fDB8fHww"
+    },
+  ];
+
+  
+  const [currentLocationIndex, setCurrentLocationIndex] = useState(0);
+
+
+  const changeLocation = (direction) => {
+    let newIndex;
+    if (direction === 'right') {
+    
+      newIndex = currentLocationIndex === 0 
+        ? locations.length - 1 
+        : currentLocationIndex - 1;
+    } else if (direction === 'left') {
+      
+      newIndex = (currentLocationIndex + 1) % locations.length;
+    }
+    
+    setCurrentLocationIndex(newIndex);
+  };
+
+ 
+  const currentLocation = locations[currentLocationIndex];
+
+  
+  const FeedbackButton = () => {
+    const handleFeedbackClick = () => {
+      alert("Feedback form goes here!");
+    };
+
+    return (
+      <div className="fixed bottom-0 right-3 z-50">
+        <button
+          onClick={handleFeedbackClick}
+          className="flex items-center bg-white text-blue-500 font-thin text-sm py-1 px-4 w-full border-t border-gray-200 shadow-md hover:text-blue-700"
+        >
+          <FaMessage className="text-blue-500 w-3 h-3 mr-2" />
+          Feedback
+        </button>
+      </div>
+    );
   };
 
   return (
-    <div className="fixed bottom-0 right-3 z-50">
-    <button
-      onClick={handleFeedbackClick}
-      className="flex items-center bg-white text-blue-500 font-thin text-sm py-1 px-4 w-full border-t border-gray-200 shadow-md hover:text-blue-700"
-    >
-      <FaMessage className="text-blue-500 w-3 h-3 mr-2" /> {/* Icon */}
-      Feedback
-    </button>
-  </div>
-  );
-};
-
-const Page = () => {
-  return (
-    <div
-      className="min-h-screen bg-cover bg-no-repeat"
-      style={{
-        backgroundImage: `url('https://i.pinimg.com/originals/e9/b2/72/e9b2721d83d72a642dc01fd04160b208.jpg')`,
+    <div 
+      className="min-h-screen bg-cover bg-no-repeat transition-all duration-500"
+      style={{ 
+        backgroundImage: `url('${currentLocation.backgroundUrl}')` 
       }}
     >
       <Navbar />
-      <LocationComponent/>
+      
+      {/* Location Navigation Div */}
+      <div className="absolute top-[53%] right-[7%] transform -translate-y-1/2 flex items-center gap-1">
+        {/* Location Name Div */}
+        <div className="flex px-4 py-2 bg-black/70 text-white rounded-md">
+          {/* Location Icon (Using React Icon) */}
+          <CiLocationOn className="display flex items-start w-5 h-5 mr-2" />
+          {/* Location Name */}
+          <span className="text-base">{currentLocation.name}</span>
+        </div>
+
+        {/* Right Arrow Button Div (Goes to Previous) */}
+        <div 
+          onClick={() => changeLocation('right')}
+          className="flex items-center justify-center px-4 py-1.5 bg-black/70 text-white rounded-md cursor-pointer hover:bg-black/80 transition"
+        >
+          <span className="text-lg">&lt;</span>
+        </div>
+
+        {/* Left Arrow Button Div (Goes to Next) */}
+        <div 
+          onClick={() => changeLocation('left')}
+          className="flex items-center justify-center px-4 py-1.5 bg-black/70 text-white rounded-md cursor-pointer hover:bg-black/80 transition"
+        >
+          <span className="text-lg">&gt;</span>
+        </div>
+      </div>
+
       <HorizontalCards data1={data1} />
       <Scroll data={data} />
       <FeedbackButton />
