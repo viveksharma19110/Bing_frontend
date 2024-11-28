@@ -8,7 +8,7 @@ import {
     Smartphone,
     MoreHorizontal,
     Mic,
-    Camera,
+    ScanSearch ,
 } from 'lucide-react';
 
 const Navbar = () => {
@@ -93,12 +93,12 @@ const Navbar = () => {
                                 className="w-full py-3 px-12 text-base text-gray-800 placeholder-gray-500 rounded-full focus:outline-none"
                             />
 
-                            <div className="absolute right-4 flex items-center space-x-3">
-                                <button className="hover:bg-gray-100 p-1 rounded-full transition-colors">
-                                    <Mic className="w-5 h-5 text-blue-500" />
+                            <div className="absolute right-4 flex items-center space-x-2">
+                                <button className="hover:bg-gray-100 p-0 rounded-full transition-colors">
+                                    <Mic className="w-7 h-7 text-blue-500" />
                                 </button>
-                                <button className="hover:bg-gray-100 p-1 rounded-full transition-colors">
-                                    <Camera className="w-5 h-5 text-blue-500" />
+                                <button className="hover:bg-gray-100 p-0 rounded-full transition-colors">
+                                    <ScanSearch className="w-7 h-7 text-blue-500" />
                                 </button>
                             </div>
                         </div>

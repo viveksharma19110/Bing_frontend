@@ -167,17 +167,17 @@ const Page = () => {
     >
       <Navbar />
       
-      {/* Location Navigation Div */}
+    
       <div className="absolute top-[53%] right-[7%] transform -translate-y-1/2 flex items-center gap-1">
-        {/* Location Name Div */}
+      
         <div className="flex px-4 py-2 bg-black/70 text-white rounded-md">
-          {/* Location Icon (Using React Icon) */}
+         
           <CiLocationOn className="display flex items-start w-5 h-5 mr-2" />
-          {/* Location Name */}
+          
           <span className="text-base">{currentLocation.name}</span>
         </div>
 
-        {/* Right Arrow Button Div (Goes to Previous) */}
+      
         <div 
           onClick={() => changeLocation('right')}
           className="flex items-center justify-center px-4 py-1.5 bg-black/70 text-white rounded-md cursor-pointer hover:bg-black/80 transition"
@@ -185,7 +185,7 @@ const Page = () => {
           <span className="text-lg">&lt;</span>
         </div>
 
-        {/* Left Arrow Button Div (Goes to Next) */}
+       
         <div 
           onClick={() => changeLocation('left')}
           className="flex items-center justify-center px-4 py-1.5 bg-black/70 text-white rounded-md cursor-pointer hover:bg-black/80 transition"
