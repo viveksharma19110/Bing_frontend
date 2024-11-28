@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { FaMessage } from "react-icons/fa6";
 import Navbar from "./components/Navbar";
 import Scroll from "./components/Scroll";
 import HorizontalCards from "./components/HorizontalCards";
@@ -94,13 +95,14 @@ const FeedbackButton = () => {
 
   return (
     <div className="fixed bottom-0 right-3 z-50">
-      <button
-        onClick={handleFeedbackClick}
-        className="bg-white text-blue-500 font-thin text-sm py-0 px-4 w-full border-t border-gray-200 shadow-md hover:text-blue-700"
-      >
-        Feedback
-      </button>
-    </div>
+    <button
+      onClick={handleFeedbackClick}
+      className="flex items-center bg-white text-blue-500 font-thin text-sm py-2 px-4 w-full border-t border-gray-200 shadow-md hover:text-blue-700"
+    >
+      <FaMessage className="text-blue-500 w-4 h-4 mr-2" /> {/* Icon */}
+      Feedback
+    </button>
+  </div>
   );
 };
 
