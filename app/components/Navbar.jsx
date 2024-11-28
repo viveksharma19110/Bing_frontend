@@ -13,7 +13,7 @@ import {
 
 const Navbar = () => {
     return (
-        <div className="relative min-h-[480px] bg-gradient-to-b from-gray-900/50 to-transparent">
+        <div className="relative min-h-[400px]  bg-gradient-to-b from-gray-900/50 to-transparent">
             <nav className="flex items-center justify-between px-3 py-4">
                 <div className="flex items-center space-x-6">
                     <div className="flex items-center space-x-1">

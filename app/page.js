@@ -97,9 +97,9 @@ const FeedbackButton = () => {
     <div className="fixed bottom-0 right-3 z-50">
     <button
       onClick={handleFeedbackClick}
-      className="flex items-center bg-white text-blue-500 font-thin text-sm py-2 px-4 w-full border-t border-gray-200 shadow-md hover:text-blue-700"
+      className="flex items-center bg-white text-blue-500 font-thin text-sm py-1 px-4 w-full border-t border-gray-200 shadow-md hover:text-blue-700"
     >
-      <FaMessage className="text-blue-500 w-4 h-4 mr-2" /> {/* Icon */}
+      <FaMessage className="text-blue-500 w-3 h-3 mr-2" /> {/* Icon */}
       Feedback
     </button>
   </div>
