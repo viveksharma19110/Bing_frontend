@@ -109,7 +109,7 @@ const Page = () => {
     },
     {
       name: "Sculpted vision of freedom",
-      backgroundUrl: "https://images.unsplash.com/photo-1621859294461-2e6e4bf0e689?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RhdHVlJTIwb2YlMjB1bml0eXxlbnwwfHwwfHx8MA%3D%3D"
+      backgroundUrl: "https://images.unsplash.com/photo-1631983097767-099c77bf880d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3RhdHVlJTIwb2YlMjB1bml0eXxlbnwwfHwwfHx8MA%3D%3D"
     },
     {
       name: "The giant's resting place",
@@ -160,7 +160,7 @@ const Page = () => {
 
   return (
     <div 
-      className="min-h-screen bg-cover bg-no-repeat transition-all duration-500"
+      className="min-h-screen bg-cover bg-no-repeat transition-opacity duration-700 ease-in-out"
       style={{ 
         backgroundImage: `url('${currentLocation.backgroundUrl}')` 
       }}
